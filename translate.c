@@ -34,7 +34,7 @@ void cMapCreation(char cMap[C][R]){
   char kefalaia[] = {"AVGDEZH8IKLMNKSOPRSTYFXPSW"};
     
   for(i=0;i<26;++i){
-	  if (j == 242) {/*dhmiourgrei provlhma to teliko s*/
+	  if (j == 242) {/*The Greek letter s creates some problems. */
 		  cMap[j][0] = mikra[i];
 		  ++j;
 		  --i;
@@ -55,7 +55,7 @@ void cMapCreation(char cMap[C][R]){
   }
 
   for (y = 0; y<27; ++y) {
-	  if (q == 210) {/*Apo ton pinaka leipei a api8mos 210*/
+	  if (q == 210) {
 		  ++q;
 		  --y;
 		  continue;
@@ -74,7 +74,7 @@ void cMapCreation(char cMap[C][R]){
 	  ++q;
   }
 
-  /*TONOI_KEFALAIA*/
+  /**UPPER CASE LETTERS WITH GREEK TONS*/
   cMap[182][0] = tonos;
   cMap[182][1] = 'A';
   cMap[184][0] = tonos;
@@ -90,7 +90,7 @@ void cMapCreation(char cMap[C][R]){
   cMap[191][0] = tonos;
   cMap[191][1] = 'W';
 
-  /*TONOI MIKRA*/
+  /*LOWER CASE LETTERS WITH GREEK TONS*/
   cMap[220][0] = 'a';
   cMap[220][1] = tonos;
   cMap[221][0] = 'e';
@@ -106,13 +106,13 @@ void cMapCreation(char cMap[C][R]){
   cMap[254][0] = 'w';
   cMap[254][1] = tonos;
 
-  /*DIALYTIKA_KEFALAIA*/
+  /*UPPER CASE LETTERS WITH DIAERESIS*/
   cMap[218][0] = 'I';
   cMap[218][1] = '"';
   cMap[219][0] = 'Y';
   cMap[219][0] = '"';
 
-  /*DIALYTIKA_MIKRA*/
+  /*LOWER CASE LETTERS WITH DIAERESIS*/
   cMap[250][0] = 'i';
   cMap[250][1] = '"';
   cMap[251][0] = 'y';
